@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathura Competitions</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mathura Competitions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="organize.html">Organize a Competition</a></li>
+                <li><a href="participate.html">Participate in a Competition</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Organize a Competition</h2>
+            <p>Want to organize a competition in Mathura? Fill out the form below:</p>
+            <form action="submit_organize.php" method="POST">
+                <label for="comp_type">Competition Type:</label>
+                <input type="text" id="comp_type" name="comp_type" required>
+                <label for="comp_date">Date:</label>
+                <input type="date" id="comp_date" name="comp_date" required>
+                <label for="comp_location">Location:</label>
+                <input type="text" id="comp_location" name="comp_location" required>
+                <label for="comp_contact">Your Contact Info:</label>
+                <input type="text" id="comp_contact" name="comp_contact" required>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section>
+            <h2>Participate in a Competition</h2>
+            <p>Interested in participating? Sign up below:</p>
+            <form action="submit_participate.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="comp_interest">Competitions Interested In:</label>
+                <input type="text" id="comp_interest" name="comp_interest" required>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at <a href="mailto:aryansharma200824@gmail.com">aryansharma200824@gmail.com</a> or call us at 6397280535.</p>
+    </footer>
+</body>
+</html>
